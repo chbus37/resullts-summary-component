@@ -22,17 +22,47 @@
   --font-family-default: 'HankenGrotesk', sans-serif;
   }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-default);
+}
 
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pale-blue);
+}
 
+.card{
+  box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+  border-radius: 2rem;
+  width: 650px;
+  background-color: var(--white);
+}
 
+.card-container{
+  display: flex;
+  justify-content: space-between;
 
+}
 
-
-
-.attribution {
-  font-size: 11px;
+.result{
+  width: 50%;
+  padding: 1.5rem 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
+
+
+
+
